@@ -1,7 +1,9 @@
 'use strict';
 
 var yhUpload = angular.module('yhUpload', [
-    'controllers',
+    'uploadCtrl',
+    'listCtrl',
+    'detailCtrl',
     'directives',
     'ngRoute',
     'xeditable',

@@ -1,6 +1,7 @@
 'use strict';
+var listCtrl = angular.module('listCtrl', []);
 
-controllers.controller('ListFilesController',['$scope', 'fileProperties', 'awsProperties', 'AwsFiles', function($scope, fileProperties, awsProperties, AwsFiles) {
+listCtrl.controller('ListFilesController',['$scope', 'fileProperties', 'awsProperties', 'AwsFiles', function($scope, fileProperties, awsProperties, AwsFiles) {
   $scope.orderProp = "filename";
   $scope.filesArray = fileProperties.files();
 

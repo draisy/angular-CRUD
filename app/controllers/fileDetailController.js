@@ -1,6 +1,7 @@
 'use strict';
+var detailCtrl = angular.module('detailCtrl', []);
 
-controllers.controller('FileDetailController',['$scope', '$routeParams', 'fileProperties', 'AwsFiles', 'awsProperties',
+detailCtrl.controller('FileDetailController',['$scope', '$routeParams', 'fileProperties', 'AwsFiles', 'awsProperties',
 function($scope, $routeParams, fileProperties, AwsFiles, awsProperties) {
 
   $scope.id = $routeParams.fileId;

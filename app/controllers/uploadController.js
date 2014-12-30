@@ -1,7 +1,7 @@
 'use strict';
-var controllers = angular.module('controllers', []);
+var uploadCtrl = angular.module('uploadCtrl', []);
 
-controllers.controller('UploadController',['$scope', '$timeout', 'awsProperties', 'AwsFiles', function($scope, awsProperties, $timeout, AwsFiles) {
+uploadCtrl.controller('UploadController',['$scope', '$timeout', 'awsProperties', 'AwsFiles', function($scope, awsProperties, $timeout, AwsFiles) {
   $scope.sizeLimit      = 10585760; // 10MB in Bytes
   $scope.uploadProgress = 0;
 
