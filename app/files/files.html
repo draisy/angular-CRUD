@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">
+    Search: <input ng-model="query">
+    </div>
+
+    <div class="col-md-2 col-md-offset-1">
+      Sort by:
+      <select ng-model="orderProp">
+        <option value="filename">Alphabetical</option>
+        <option value="size">Size</option>
+        <option value="modified">Date</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="4u" ng-repeat="file in filesArray |filter:query | orderBy:orderProp">
+
+      <!-- Box -->
+        <section class="box feature">
+          <div class="img-resize">
+            <a href="#/file/{{file.id}}" class="featured"><img ng-src="{{file.path}}" alt="uploaded-preview" class="list-thumbnails" fallback-src="http://i.imgur.com/vRrz3Tx.jpg"/></a>
+          </div>
+          <div class="inner">
+            <header>
+              <h2>{{file.filename}}</h2>
+              <p>Last modified on: {{file.modified}}</p>
+              <p>Size: {{file.size}} <strong>KB</strong></p>
+            </header>
+ <!--            <p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.</p> -->
+          </div>
+        </section>
+
+    </div>
+  </div>
+</div>
