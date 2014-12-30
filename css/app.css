@@ -1,0 +1,105 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.photo-item{
+  height:150px;
+}
+
+.img-resize{
+  width:150px;
+  height:100px;
+  margin: 0 auto;
+}
+
+[ng-click],
+[data-ng-click],
+[x-ng-click] {
+    cursor: pointer;
+}
+
+.inline-link{
+  text-decoration: none;
+  color: #696969;
+}
+
+.detail-image{
+  width:100%;
+}
+
+h2.editable-click {
+  text-decoration: none;
+  color: #696969;
+  border: none;
+  padding-right:25px;
+  display: inline-block;
+}
+
+span.editable{
+  margin-left:25px;
+}
+
+.edit-options{
+  font-size:25px;
+}
+
+.edit-options:hover{
+  color:#2a6496;
+}
+
+.right{
+  text-align:right;
+}
+
+.list-thumbnails{
+  height:150px;
+  width:auto;
+  padding: 20px 0;
+}
+
+ /* layout.css Style */
+.upload-drop-zone {
+  height: 200px;
+  border-width: 2px;
+  margin-bottom: 20px;
+}
+
+/* skin.css Style*/
+.upload-drop-zone {
+  color: #ccc;
+  border-style: dashed;
+  border-color: #ccc;
+  line-height: 200px;
+  text-align: center
+}
+.upload-drop-zone.drop {
+  color: #222;
+  border-color: #222;
+}
