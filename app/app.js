@@ -51,7 +51,7 @@ yhUpload.factory('awsProperties', function($http){
  // var awsInfo = {accessKeyId:null, secretAccessKey:null};
 
   $.ajax({
-  url: 'amazon-info.json',
+  url: '../amazon-info.json',
   async: false,
   dataType: 'json',
   success: function (response) {
