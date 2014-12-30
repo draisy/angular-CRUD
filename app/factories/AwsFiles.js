@@ -1,6 +1,7 @@
 yhUpload.factory("AwsFiles", ['awsProperties', 'fileProperties', '$q', function(awsProperties, fileProperties, $q){
   var _aws = awsProperties;
-  var _files = fileProperties
+  var _files = fileProperties;
+  
   var _uploadFile = function(file){
     var uniqueFileName = _aws.prefix() + file.name;
     var params = { 
