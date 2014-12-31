@@ -79,7 +79,7 @@ span.editable{
 }
 
 .list-thumbnails{
-  height:150px;
+  max-height:150px;
   width:auto;
   padding: 20px 0;
 }
