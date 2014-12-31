@@ -1,9 +1,8 @@
-# Yellowhammer Code Test Flight
+Welcome to angular-CRUD - a family friendly angular app for you, your friends, your dog and your cat.
+
 ![sweet picture](http://img1.wikia.nocookie.net/__cb20131125081250/steamtradingcards/images/thumb/b/b5/Gun_Monkeys_Artwork_1.jpg/800px-Gun_Monkeys_Artwork_1.jpg)
 
 _artist: Michael Firman http://www.firmanproductions.com/_
-
-Welcome to angular-CRUD - a family friendly angular app for you, your friends, your dog and your cat.
 
 #### Features
 - A user can upload a file through the web browser 
