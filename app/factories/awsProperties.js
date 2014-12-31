@@ -1,4 +1,4 @@
-yhUpload.factory('awsProperties', function($http){
+yhUpload.factory('awsProperties', function(){
   $.ajax({
   url: '../../amazon-info.json',
   async: false,
